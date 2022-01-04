@@ -31,12 +31,14 @@ export const Nav = styled.nav`
     margin: 0 12px;
     text-decoration: none;
     color: var(--white-color);
-    padding-bottom: 3px;
+    padding-bottom: 4px;
     border-bottom: 3px solid transparent;
+    transition: ease-out 300ms;
     :hover,
     :visited,
     .active {
       border-bottom: 3px solid var(--primary-color);
+      transition: ease-out 300ms;
     }
   }
 `;
