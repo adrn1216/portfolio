@@ -4,7 +4,7 @@ export const StyledButton = styled.button`
   outline: 0;
   border: 0;
   height: 48px;
-  width: 169px;
+  width: ${(props) => (props.width ? props.width : "169px")};
   margin: 0 12px;
   border-radius: 5px;
   padding: 16px, 20px, 16px, 20px;

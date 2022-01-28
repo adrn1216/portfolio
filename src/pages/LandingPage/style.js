@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const LandingPageContainer = styled.div``;
 
 export const Intro = styled.section`
-  padding: 128px 0 180px 0;
+  padding: 128px 0 0 0;
   color: var(--white-color);
   h1 {
     font-size: 60px;
     letter-spacing: 0.5px;
     line-height: 71px;
     margin: 16px 0;
-    span {
+    .name {
       color: var(--primary-color);
     }
   }
@@ -31,7 +31,7 @@ export const AboutMe = styled.section`
   width: 967px;
   border-radius: 8px;
   padding: 24px;
-  margin: auto;
+  margin: 150px auto;
   display: flex;
   img {
     height: 405px;
@@ -64,6 +64,63 @@ export const AboutMe = styled.section`
     //TODO:  remove margin in button component
     button {
       margin: 0;
+    }
+  }
+`;
+
+export const Projects = styled.section`
+  max-width: 1155px;
+  margin: 0 auto 128px;
+  h3 {
+    font-family: var(--primary-font);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    text-align: left;
+  }
+`;
+
+export const Project = styled.div`
+  background-color: white;
+  margin: 24px 0;
+  height: 534px;
+  width: 1155px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  background-image: url(${(props) => props.image});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 7px;
+    opacity: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000000 100%);
+    height: 100%;
+    transition: 300ms ease-out;
+    :hover {
+      opacity: 1;
+      transition: 300ms ease-out;
+    }
+    h3 {
+      margin: 0 40px;
+    }
+    p {
+      //styleName: Subtitle 1;
+      font-family: var(--primary-font);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: white;
+      margin: 10px 40px 40px 40px;
     }
   }
 `;

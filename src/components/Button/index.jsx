@@ -1,8 +1,8 @@
 import { StyledButton } from "./style";
 
-export const Button = ({ type, prefixIcon, suffixIcon, children }) => {
+export const Button = ({ type, prefixIcon, suffixIcon, children, width }) => {
   return (
-    <StyledButton type={type}>
+    <StyledButton type={type} width={width}>
       <div>
         {prefixIcon}
         {children}
