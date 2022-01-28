@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Button } from "../../components/Button";
-import Header from "../../components/Header";
 import { AboutMe, Intro, Project, Projects } from "./style";
 import { ReactComponent as DownloadIcon } from "../../assets/svg/download-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
@@ -30,7 +29,6 @@ const LandingPage = () => {
 
   return (
     <Fragment>
-      <Header />
       <Intro>
         <h1>
           I am <span className="name">Louis Reyes.</span>
