@@ -4,13 +4,13 @@ import { AboutMe, Intro, Project, Projects } from "./style";
 import { ReactComponent as DownloadIcon } from "../../assets/svg/download-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
 import profile from "../../assets/webp/profile-picture.webp";
-import { Footer } from "../../components/Footer";
 import ReactTypingEffect from "react-typing-effect";
 import bayad1 from "../../assets/images/bayad1.png";
 import getall1 from "../../assets/images/getall1.png";
 import ancora2 from "../../assets/images/ancora2.png";
 import winterfell1 from "../../assets/images/winterfell1.png";
 import oldportfolio3 from "../../assets/images/oldportfolio3.png";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const [role, setRole] = useState("Web Developer");
@@ -69,9 +69,11 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <Button type="secondary" suffixIcon={<ArrowRightIcon />}>
-            More about me
-          </Button>
+          <Link to="/about">
+            <Button type="secondary" suffixIcon={<ArrowRightIcon />}>
+              More about me
+            </Button>
+          </Link>
         </div>
       </AboutMe>
       <Projects>
@@ -122,7 +124,6 @@ const LandingPage = () => {
           </Button>
         </div>
       </Projects>
-      <Footer />
     </Fragment>
   );
 };
