@@ -1,59 +1,45 @@
-import React, { Fragment } from "react";
-import { AboutMe, Skills } from "./style";
+import React, { Fragment, useEffect, useState } from "react";
+import { AboutMe, Reviews, Skills } from "./style";
 import SkillCard from "../../components/SkillCard";
-import { ReactComponent as ReactIcon } from "../../assets/svg/react-icon.svg";
-import { ReactComponent as JavascriptIcon } from "../../assets/svg/javascript-icon.svg";
-import { ReactComponent as HtmlIcon } from "../../assets/svg/html-icon.svg";
-import { ReactComponent as CssIcon } from "../../assets/svg/css-icon.svg";
-import { ReactComponent as GitIcon } from "../../assets/svg/git-icon.svg";
-import { ReactComponent as ProjectIcon } from "../../assets/svg/project-icon.svg";
-import { ReactComponent as MultimediaIcon } from "../../assets/svg/multimedia-icon.svg";
-import { ReactComponent as DeploymentIcon } from "../../assets/svg/deployment-icon.svg";
+import ReviewCard from "../../components/ReviewCard";
 import profile from "../../assets/webp/profile-picture.webp";
+import { reviews, skills } from "../../constant";
+import { getSellerReviews } from "../../api";
+import Slider from "react-slick";
+
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
 const About = () => {
-  const skills = [
-    {
-      icon: <ReactIcon />,
-      title: "React",
-      description: "React JS, Next JS, Redux, Context API",
-    },
-    {
-      icon: <JavascriptIcon />,
-      title: "Javascript",
-      description: "Javascript, Typescript",
-    },
-    {
-      icon: <HtmlIcon />,
-      title: "HTML",
-      description: "HTML5, Semantic HTML, Accessibility",
-    },
-    {
-      icon: <CssIcon />,
-      title: "CSS",
-      description: "CSS3, SASS, Styled Components, Ant Design",
-    },
-    {
-      icon: <GitIcon />,
-      title: "Git",
-      description: "Github, Gitlab, Bitbucket",
-    },
-    {
-      icon: <DeploymentIcon />,
-      title: "Deployment",
-      description: "Vercel, Namecheap, Porkbun",
-    },
-    {
-      icon: <ProjectIcon />,
-      title: "Management",
-      description: "Trello, Jira",
-    },
-    {
-      icon: <MultimediaIcon />,
-      title: "Multimedia",
-      description: "Adobe Premiere Pro, Figma",
-    },
-  ];
+  // const [reviews, setReviews] = useState([]);
+  // const [isError, setIsError] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
+
+  // const getReviews = async () => {
+  //   const data = await getSellerReviews(setIsError, setIsLoading);
+  //   if (data) {
+  //     setReviews(data);
+  //     localStorage.setItem("reviews", JSON.stringify(data));
+  //     localStorage.setItem("reviewsData", JSON.stringify(new Date()));
+  //   } else {
+  //     console.log(JSON.parse(localStorage.getItem("reviews")));
+  //     setReviews(JSON.parse(localStorage.getItem("reviews")));
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getReviews();
+  // }, []);
+
+  // useEffect(() => {
+  //   console.log("reviews", reviews);
+  // }, [reviews]);
+
   return (
     <Fragment>
       <AboutMe>
@@ -95,6 +81,14 @@ const About = () => {
           })}
         </div>
       </Skills>
+      <Reviews>
+        <h3>Reviews</h3>
+        <Slider {...settings}>
+          {reviews.map((item) => {
+            return <ReviewCard review={item} />;
+          })}
+        </Slider>
+      </Reviews>
     </Fragment>
   );
 };

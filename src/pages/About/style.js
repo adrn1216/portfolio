@@ -34,7 +34,7 @@ export const AboutMe = styled.section`
       letter-spacing: 0.44px;
     }
     a {
-      color: var(--primary-color);
+      color: var(--accent-color);
       text-decoration: none;
     }
     //TODO:  remove margin in button component
@@ -45,6 +45,29 @@ export const AboutMe = styled.section`
 `;
 
 export const Skills = styled.section`
+  max-width: 1155px;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 100px;
+  h3 {
+    font-family: var(--primary-font);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: var(--white-color);
+    text-align: center;
+  }
+  > div {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+`;
+
+export const Reviews = styled.section`
+  width: 80%;
   max-width: 1155px;
   margin: auto;
   padding: 0 20px;

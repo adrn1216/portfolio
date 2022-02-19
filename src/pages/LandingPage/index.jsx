@@ -106,7 +106,7 @@ const LandingPage = () => {
             },
             {
               title: "Old Portfolio Design",
-              description: "Yo yo",
+              description: "",
               image: oldportfolio3,
             },
           ].map(({ title, description, image }) => {
