@@ -4,16 +4,7 @@ import SkillCard from "../../components/SkillCard";
 import ReviewCard from "../../components/ReviewCard";
 import profile from "../../assets/webp/profile-picture.webp";
 import { reviews, skills } from "../../constant";
-import { getSellerReviews } from "../../api";
-import Slider from "react-slick";
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
+// import { getSellerReviews } from "../../api";
 
 const About = () => {
   // const [reviews, setReviews] = useState([]);
@@ -82,12 +73,10 @@ const About = () => {
         </div>
       </Skills>
       <Reviews>
-        <h3>Reviews</h3>
-        <Slider {...settings}>
-          {reviews.map((item) => {
-            return <ReviewCard review={item} />;
-          })}
-        </Slider>
+        <h3>Fiverr Reviews</h3>
+        {reviews.map((item) => {
+          return <ReviewCard review={item} />;
+        })}
       </Reviews>
     </Fragment>
   );

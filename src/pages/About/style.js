@@ -67,7 +67,6 @@ export const Skills = styled.section`
 `;
 
 export const Reviews = styled.section`
-  width: 80%;
   max-width: 1155px;
   margin: auto;
   padding: 0 20px;
@@ -82,7 +81,7 @@ export const Reviews = styled.section`
     text-align: center;
   }
   > div {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;

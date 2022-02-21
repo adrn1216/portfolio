@@ -59,7 +59,6 @@ export const reviews = [
       "Adrian aka Louis was great to work with, third time I have used him. I had lots of additional requests and he had completed the video in 3 days, but I was very busy with my personal work life, so I asked if he could edit more at a later date. He was happy to accommodate this and always pleased to put his customers' first.\n\nWould 100% recommend, you can't go wrong with him in my opinion.",
     star: "5",
     country: "United Kingdom",
-    published: "",
   },
   {
     name: "zicobakker5",
@@ -69,7 +68,6 @@ export const reviews = [
       "The products he delivered are of great quality and he understands exactly what we need. If we have feedback he delivers that feedback on point and with his own creativity if need be. This time I ordered two trailers at the same time, previously I already had one. So he brings consistent quality. \n\nHe did have too many projects running at the same time this time. But he solved that professionally and kept us up to date accordingly!",
     star: "5",
     country: "Netherlands",
-    published: "",
   },
   {
     name: "elecular5",
@@ -79,7 +77,6 @@ export const reviews = [
       "this is my second buy from adrn1216 and I really liked his ads. he was very communicative and delivered High quality videos. he also accommodated all of my requested changes",
     star: "5",
     country: "Germany",
-    published: "",
   },
   {
     name: "garretx5",
@@ -89,7 +86,6 @@ export const reviews = [
       "First time using fiveer, dude was chilled, easy to get along with. Well look at the video, im satisfied, so should you.",
     star: "5",
     country: "China",
-    published: "",
   },
   {
     name: "charlottejune85",
@@ -99,6 +95,5 @@ export const reviews = [
       "Second time using Adrian, he is very communicative and allows time for editing if required.\n\nAlways going the extra mile to ensure 100% satisfaction!\nDo use him for editing your videos, you will not be disappointed with the end result, in my opinion.",
     star: "5",
     country: "United Kingdom",
-    published: "",
   },
 ];
