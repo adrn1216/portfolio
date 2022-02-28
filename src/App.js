@@ -5,6 +5,8 @@ import LandingPage from "./pages/LandingPage";
 import Header from "../src/components/Header";
 import { Footer } from "./components/Footer";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<div>Projects</div>} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/contact" element={<div>Contact</div>} />
           <Route path="/" element={<LandingPage />} />
         </Routes>

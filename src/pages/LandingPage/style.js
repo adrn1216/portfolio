@@ -24,6 +24,9 @@ export const Intro = styled.section`
     justify-content: center;
     align-items: center;
   }
+  button {
+    margin: 0 12px;
+  }
 `;
 
 export const AboutMe = styled.section`
@@ -33,13 +36,17 @@ export const AboutMe = styled.section`
   padding: 24px;
   margin: 150px auto;
   display: flex;
-  img {
+  .profilePic {
     height: 405px;
-    background-color: red;
     width: 326px;
-    border-radius: 8px;
-    object-fit: cover;
     margin-right: 32px;
+    img {
+      height: 405px;
+      width: 326px;
+      background-color: var(--accent-color);
+      border-radius: 8px;
+      object-fit: cover;
+    }
   }
   > div {
     text-align: left;
@@ -61,10 +68,6 @@ export const AboutMe = styled.section`
       line-height: 28px;
       letter-spacing: 0.44px;
     }
-    //TODO:  remove margin in button component
-    button {
-      margin: 0;
-    }
   }
 `;
 
@@ -79,6 +82,9 @@ export const Projects = styled.section`
     letter-spacing: 0.25px;
     color: #ffffff;
     text-align: left;
+  }
+  button {
+    margin: 0 12px;
   }
 `;
 
@@ -112,7 +118,6 @@ export const Project = styled.div`
       margin: 0 40px;
     }
     p {
-      //styleName: Subtitle 1;
       font-family: var(--primary-font);
       font-size: 16px;
       font-weight: 500;
