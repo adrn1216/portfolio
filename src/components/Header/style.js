@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
   border-bottom: 1px solid var(--edges-color);
   div {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1155px;
     margin: auto;
     display: flex;
     justify-content: space-between;

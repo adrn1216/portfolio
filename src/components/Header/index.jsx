@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HeaderContainer, Nav } from "./style";
 
 const Header = () => {
@@ -6,10 +7,10 @@ const Header = () => {
       <div>
         <p>adrn1216</p>
         <Nav>
-          <a href="">Intro</a>
-          <a href="">About Me</a>
-          <a href="">Projects</a>
-          <a href="">Contact Me</a>
+          <Link to="/">Intro</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact Me</Link>
         </Nav>
       </div>
     </HeaderContainer>

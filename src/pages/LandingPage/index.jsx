@@ -1,17 +1,12 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Button } from "../../components/Button";
-import Header from "../../components/Header";
 import { AboutMe, Intro, Project, Projects } from "./style";
 import { ReactComponent as DownloadIcon } from "../../assets/svg/download-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
 import profile from "../../assets/webp/profile-picture.webp";
-import { Footer } from "../../components/Footer";
 import ReactTypingEffect from "react-typing-effect";
-import bayad1 from "../../assets/images/bayad1.png";
-import getall1 from "../../assets/images/getall1.png";
-import ancora2 from "../../assets/images/ancora2.png";
-import winterfell1 from "../../assets/images/winterfell1.png";
-import oldportfolio3 from "../../assets/images/oldportfolio3.png";
+import { Link } from "react-router-dom";
+import { projects } from "../../constant";
 
 const LandingPage = () => {
   const [role, setRole] = useState("Web Developer");
@@ -30,7 +25,6 @@ const LandingPage = () => {
 
   return (
     <Fragment>
-      <Header />
       <Intro>
         <h1>
           I am <span className="name">Louis Reyes.</span>
@@ -46,14 +40,18 @@ const LandingPage = () => {
         </h1>
         <h5>This is my web portfolio!</h5>
         <div>
-          <Button type="primary">See Projects</Button>
+          <Link to="/projects">
+            <Button type="primary">See Projects</Button>
+          </Link>
           <Button type="secondary" prefixIcon={<DownloadIcon />}>
             Download CV
           </Button>
         </div>
       </Intro>
       <AboutMe>
-        <img src={profile} alt="portrait of a man in formal attire" />
+        <div className="profilePic">
+          <img src={profile} alt="portrait of a man in formal attire" />
+        </div>
         <div>
           <div>
             <h2>About Me</h2>
@@ -71,47 +69,19 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <Button type="secondary" suffixIcon={<ArrowRightIcon />}>
-            More about me
-          </Button>
+          <Link to="/about">
+            <Button type="secondary" suffixIcon={<ArrowRightIcon />}>
+              More about me
+            </Button>
+          </Link>
         </div>
       </AboutMe>
       <Projects>
         <h3>Projects</h3>
         <div>
-          {[
-            {
-              title: "Bayad Content Management System",
-              description:
-                "A content management system for the Bayad Benter mobile app.",
-              image: bayad1,
-            },
-            {
-              title: "GetAll Content Management System",
-              description:
-                "A content management system for the All Day mobile delivery app.",
-              image: getall1,
-            },
-            {
-              title: "Ancora (Internal Project of White Cloak Technologies)",
-              description: "An online learning platform for the company.",
-              image: ancora2,
-            },
-            {
-              title:
-                "Winterfell (Internal Project of White Cloak Technologies)",
-              description:
-                "A proof of concept project developed by the 1st batch of trainees.",
-              image: winterfell1,
-            },
-            {
-              title: "Old Portfolio Design",
-              description: "Yo yo",
-              image: oldportfolio3,
-            },
-          ].map(({ title, description, image }) => {
+          {projects.slice(0, 4).map(({ title, description, image }) => {
             return (
-              <Project image={image}>
+              <Project image={image[0]}>
                 <div>
                   <h3>{title}</h3>
                   <p>{description}</p>
@@ -119,12 +89,26 @@ const LandingPage = () => {
               </Project>
             );
           })}
-          <Button type="primary" suffixIcon={<ArrowRightIcon />} width="218px">
-            Ver más en Behance
+          <Link to="/projects">
+            <Button width="300px" type="primary">
+              See All Projects
+            </Button>
+          </Link>
+          <Button
+            type="secondary"
+            suffixIcon={<ArrowRightIcon />}
+            width="300px"
+            onClick={() =>
+              window.open(
+                "https://www.fiverr.com/users/adrn1216/portfolio",
+                "_blank"
+              )
+            }
+          >
+            View Fiverr Portfolio
           </Button>
         </div>
       </Projects>
-      <Footer />
     </Fragment>
   );
 };
