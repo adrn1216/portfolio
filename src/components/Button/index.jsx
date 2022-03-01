@@ -7,9 +7,15 @@ export const Button = ({
   children,
   width,
   onClick,
+  disabled,
 }) => {
   return (
-    <StyledButton type={type} width={width} onClick={onClick}>
+    <StyledButton
+      type={type}
+      width={width}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <div>
         {prefixIcon}
         {children}
