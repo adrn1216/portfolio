@@ -1,9 +1,5 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React from "react";
 import { ContactMeContainer, StyledForm } from "./style";
-import SkillCard from "../../components/SkillCard";
-import ReviewCard from "../../components/ReviewCard";
-import profile from "../../assets/webp/profile-picture.webp";
-import { reviews, skills } from "../../constant";
 import { Button } from "../../components/Button";
 
 const ContactMe = () => {
@@ -11,8 +7,8 @@ const ContactMe = () => {
     <ContactMeContainer>
       <h1>Let's Talk!</h1>
       <p>
-        If you are interested in my work or have any concerns, do not hesitate
-        to write me!
+        If you are interested in my work or have any concerns, do not
+        hesicleartate to write me!
       </p>
       <StyledForm>
         <label for="name">Name</label>
