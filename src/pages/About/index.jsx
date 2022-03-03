@@ -1,36 +1,11 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import { AboutMe, Reviews, Skills } from "./style";
 import SkillCard from "../../components/SkillCard";
 import ReviewCard from "../../components/ReviewCard";
 import profile from "../../assets/webp/profile-picture.webp";
 import { reviews, skills } from "../../constant";
-// import { getSellerReviews } from "../../api";
 
 const About = () => {
-  // const [reviews, setReviews] = useState([]);
-  // const [isError, setIsError] = useState(false);
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // const getReviews = async () => {
-  //   const data = await getSellerReviews(setIsError, setIsLoading);
-  //   if (data) {
-  //     setReviews(data);
-  //     localStorage.setItem("reviews", JSON.stringify(data));
-  //     localStorage.setItem("reviewsData", JSON.stringify(new Date()));
-  //   } else {
-  //     console.log(JSON.parse(localStorage.getItem("reviews")));
-  //     setReviews(JSON.parse(localStorage.getItem("reviews")));
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getReviews();
-  // }, []);
-
-  // useEffect(() => {
-  //   console.log("reviews", reviews);
-  // }, [reviews]);
-
   return (
     <Fragment>
       <AboutMe>

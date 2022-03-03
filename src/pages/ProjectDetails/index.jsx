@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from "../../components/Button";
-import {
-  Project,
-  ProjectDetailsContainer,
-  ProjectPreview,
-  Technologies,
-} from "./style";
+import { ProjectDetailsContainer, ProjectPreview, Technologies } from "./style";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
 import { Link } from "react-router-dom";
 import { projects } from "../../constant";

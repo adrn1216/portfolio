@@ -10,17 +10,17 @@ export const Footer = () => {
       <div>
         <p>adrn1216</p>
         <Nav>
-          <a href="">Intro</a>
-          <a href="">About Me</a>
-          <a href="">Projects</a>
+          <a href="/">Intro</a>
+          <a href="/about">About Me</a>
+          <a href="/projects">Projects</a>
         </Nav>
         <Nav>
-          <a href="">Contact Me</a>
-          <a href="">Mail</a>
-          <a href="">LinkedIn</a>
+          <a href="/contact">Contact Me</a>
+          <a href="/contact">Mail</a>
+          <a href="/">LinkedIn</a>
         </Nav>
         <Nav>
-          <a href="">Social</a>
+          <a href="/">Social</a>
           <div className="social-links">
             <FiverrIcon />
             <FacebookIcon />
