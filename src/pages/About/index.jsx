@@ -20,7 +20,7 @@ const About = () => {
               UX designers and am also well-versed in Agile Scrum.
             </p>
             <p>
-              I graduated from a university and I'm glad to where the
+              I graduated from Bulacan State Univesity and I'm glad to where the
               programming industry is taking me that I turned my profession into
               my passion.
             </p>
