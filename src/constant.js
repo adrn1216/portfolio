@@ -27,7 +27,7 @@ export const projects = [
   {
     id: "bayad-cms",
     title: "Bayad Content Management System",
-    description: "A content management system for the Bayad Benter mobile app.",
+    description: "A content management system for the Bayad Center Mobile app.",
     image: [bayad1, bayad2, bayad3, bayad4],
     about:
       "A project by White Cloak Technologies. Our team consisted of more than 10 devs simultaneously working on the mobile app and web and I was one of the 3 frontend devs who started the project from scratch working on the Content Management System that is needed for the app content and customer service. I only included a screenshot of the login page as most screens shows private data of the client and is owned by White Cloak. This is where I researched on new technologies namely TypeScript, AWS (Cognito) and Jest for TDD.",
@@ -118,7 +118,7 @@ export const projects = [
   {
     id: "old-portfolio",
     title: "Old Portfolio Design",
-    description: "Old Portfolio design I made while learning Next JS and Figma",
+    description: "Old portfolio design I made while learning Next JS and Figma",
     image: [oldportfolio1, oldportfolio2, oldportfolio3],
     about:
       "A project by White Cloak Technologies. Our team consisted of more than 10 devs simultaneously working on the mobile app and web and I was one of the 3 frontend devs who started the project from scratch working on the Content Management System that is needed for the app content and customer service. I only included a screenshot of the login page as most screens shows private data of the client and is owned by White Cloak. This is where I researched on new technologies namely TypeScript, AWS (Cognito) and Jest for TDD.",
