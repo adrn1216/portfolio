@@ -79,7 +79,7 @@ const LandingPage = () => {
       <Projects>
         <h3>Projects</h3>
         <div>
-          {projects.slice(0, 4).map(({ title, description, image }) => {
+          {projects.slice(0, 3).map(({ title, description, image }) => {
             return (
               <Project image={image[0]}>
                 <div>

@@ -27,7 +27,7 @@ export const projects = [
   {
     id: "bayad-cms",
     title: "Bayad Content Management System",
-    description: "A content management system for the Bayad Center Mobile app.",
+    description: "A content management system for the Bayad Center Mobile App",
     image: [bayad1, bayad2, bayad3, bayad4],
     about:
       "A project by White Cloak Technologies. Our team consisted of more than 10 devs simultaneously working on the mobile app and web and I was one of the 3 frontend devs who started the project from scratch working on the Content Management System that is needed for the app content and customer service. I only included a screenshot of the login page as most screens shows private data of the client and is owned by White Cloak. This is where I researched on new technologies namely TypeScript, AWS (Cognito) and Jest for TDD.",
@@ -54,7 +54,7 @@ export const projects = [
     id: "getall-cms",
     title: "GetAll Content Management System",
     description:
-      "A content management system for the Get All mobile delivery app.",
+      "A content management system for the Get All Mobile Delivery App",
     image: [getall5, getall2, getall1, getall3, getall4],
     about:
       "A project by White Cloak Technologies. The project is more than a year old when I joined the team. This is the first time that I contributed in a codebase where everything is setup already and a codebase where multiple projects share the same logic and components. Our team consisted of more than 10 devs simultaneously working on the mobile app and web and I was one of the 2 frontend devs performing bugfix and adding new features on the Content Management System that is needed for the app content. I only included images of the app from play store and a screenshot of the login page and a few dashboard graphics as most screens shows private data of the client and is owned by White Cloak.",
@@ -76,9 +76,19 @@ export const projects = [
     ],
   },
   {
+    id: "old-portfolio",
+    title: "Old Portfolio Design",
+    description: "Old portfolio design I made while learning Next JS and Figma",
+    image: [oldportfolio1, oldportfolio2, oldportfolio3],
+    about:
+      "This is my first portfolio design I made while learning Next JS, Figma and Vercel.",
+    date: "October 2021",
+    technologies: ["Next JS", "HTML", "CSS", "Javascript"],
+  },
+  {
     id: "ancora-wc",
     title: "Ancora (Internal Project of White Cloak Technologies)",
-    description: "An online learning platform for the company.",
+    description: "An online learning platform for the company",
     image: [ancora2, ancora1],
     about:
       "A project by White Cloak Technologies. Our team consisted of 4 devs and I was one of the 2 frontend devs who started the project from scratch. Set up (2) separate projects to cater features exclusive for different users. Researched and implemented new technology (GraphQL) in a short span of time. Quickly developed lots of new features per sprint which made the product ready to use for internal training programs in a span of 4 months.",
@@ -100,7 +110,7 @@ export const projects = [
     id: "winterfell-wc",
     title: "Winterfell (Internal Project of White Cloak Technologies)",
     description:
-      "A proof of concept project developed by the 1st batch of trainees.",
+      "A proof of concept project developed by the 1st batch of trainees",
     image: [winterfell1],
     about:
       "A project by White Cloak Technologies. Our team consisted of almost 20 trainees simultaneously working on the mobile app and web. Recreate the initial version of the winterfell project done during the capstone in ancora training program. Enhanced CSS skills by not using any css framework.",
@@ -114,16 +124,6 @@ export const projects = [
       "Restful API",
       "Axios",
     ],
-  },
-  {
-    id: "old-portfolio",
-    title: "Old Portfolio Design",
-    description: "Old portfolio design I made while learning Next JS and Figma",
-    image: [oldportfolio1, oldportfolio2, oldportfolio3],
-    about:
-      "A project by White Cloak Technologies. Our team consisted of more than 10 devs simultaneously working on the mobile app and web and I was one of the 3 frontend devs who started the project from scratch working on the Content Management System that is needed for the app content and customer service. I only included a screenshot of the login page as most screens shows private data of the client and is owned by White Cloak. This is where I researched on new technologies namely TypeScript, AWS (Cognito) and Jest for TDD.",
-    date: "June 22 - December 22, 2020",
-    technologies: ["Next JS", "Styled Components", "HTML", "CSS", "Javascript"],
   },
 ];
 
