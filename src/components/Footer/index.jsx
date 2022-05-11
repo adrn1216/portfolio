@@ -16,16 +16,33 @@ export const Footer = () => {
         </Nav>
         <Nav>
           <a href="/contact">Contact Me</a>
-          <a href="/contact">Mail</a>
+          <a href="mailto: louisadrianreyes@yahoo.com">Mail</a>
           <a href="/">LinkedIn</a>
         </Nav>
         <Nav>
           <a href="/">Social</a>
           <div className="social-links">
-            <FiverrIcon />
-            <FacebookIcon />
-            <InstagramIcon />
-            <BehanceIcon />
+            <FiverrIcon
+              onClick={() =>
+                window.open(
+                  "https://business.fiverr.com/freelancers/adrn1216",
+                  "_blank"
+                )
+              }
+            />
+            <FacebookIcon
+              onClick={() => window.open("https://fb.com/adrn1216", "_blank")}
+            />
+            <InstagramIcon
+              onClick={() =>
+                window.open("https://instagram.com/adrn1216", "_blank")
+              }
+            />
+            <BehanceIcon
+              onClick={() =>
+                window.open("https://behance.net/adrn1216", "_blank")
+              }
+            />
           </div>
         </Nav>
       </div>
