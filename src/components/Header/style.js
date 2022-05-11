@@ -34,11 +34,13 @@ export const Nav = styled.nav`
     padding-bottom: 4px;
     border-bottom: 3px solid transparent;
     transition: ease-out 300ms;
-    :hover,
-    :visited,
-    .active {
+    :hover {
       border-bottom: 3px solid var(--primary-color);
       transition: ease-out 300ms;
     }
+  }
+  .active {
+    border-bottom: 3px solid var(--primary-color);
+    transition: ease-out 300ms;
   }
 `;

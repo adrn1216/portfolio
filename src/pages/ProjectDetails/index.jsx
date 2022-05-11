@@ -48,12 +48,12 @@ const ProjectDetails = () => {
           width="300px"
           onClick={() =>
             window.open(
-              "https://www.fiverr.com/users/adrn1216/portfolio",
+              "https://business.fiverr.com/freelancers/adrn1216",
               "_blank"
             )
           }
         >
-          View Fiverr Portfolio
+          View Freelancer Profile
         </Button>
       </section>
     </ProjectDetailsContainer>

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { AboutMe, Reviews, Skills } from "./style";
 import SkillCard from "../../components/SkillCard";
 import ReviewCard from "../../components/ReviewCard";

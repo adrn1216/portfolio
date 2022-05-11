@@ -76,10 +76,11 @@ const LandingPage = () => {
           </Link>
         </div>
       </AboutMe>
+
       <Projects>
         <h3>Projects</h3>
         <div>
-          {projects.slice(0, 3).map(({ title, description, image }) => {
+          {projects.slice(0, 3).map(({ title, description, image, id }) => {
             return (
               <Project image={image[0]}>
                 <div>
@@ -89,6 +90,7 @@ const LandingPage = () => {
               </Project>
             );
           })}
+          <div style={{ height: "90px" }}></div>
           <Link to="/projects">
             <Button width="300px" type="primary">
               See All Projects
@@ -100,12 +102,12 @@ const LandingPage = () => {
             width="300px"
             onClick={() =>
               window.open(
-                "https://www.fiverr.com/users/adrn1216/portfolio",
+                "https://business.fiverr.com/freelancers/adrn1216",
                 "_blank"
               )
             }
           >
-            View Fiverr Portfolio
+            View Freelancer Profile
           </Button>
         </div>
       </Projects>
