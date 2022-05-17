@@ -53,7 +53,7 @@ const LandingPage = () => {
             prefixIcon={<DownloadIcon />}
             onClick={() =>
               FileSaver.saveAs(
-                process.env.PUBLIC_URL + "/resource/cv.pdf",
+                process.env.PUBLIC_URL + "/resource/Reyes, Louis Adrian.pdf",
                 "Reyes, Louis Adrian.pdf"
               )
             }
