@@ -12,10 +12,6 @@ import ContactMe from "./pages/ContactMe";
 import ScrollToTop from "react-scroll-to-top";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
   return (
     <div className="App">
       <div className="indev">in development</div>
@@ -26,6 +22,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route
+            path="/fiverr"
+            element={
+              <iframe src="https://business.fiverr.com/freelancers/adrn1216"></iframe>
+            }
+          />
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/" element={<LandingPage />} />
         </Routes>

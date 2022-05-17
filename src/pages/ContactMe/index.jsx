@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ContactMeContainer, StyledForm } from "./style";
 import { Button } from "../../components/Button";
 
 const ContactMe = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <ContactMeContainer>
       <h1>Let's Talk!</h1>
       <p>
-        If you are interested in my work or have any concerns, do not
-        hesicleartate to write me!
+        If you are interested in my work or have any concerns, do not hesitate
+        to message me!
       </p>
       <StyledForm>
         <label for="name">Name</label>

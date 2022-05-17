@@ -34,6 +34,12 @@ const Header = () => {
           >
             Contact Me
           </Link>
+          <Link
+            to="/fiverr"
+            className={currentPage === "/fiverr" ? "active" : ""}
+          >
+            Fiverr
+          </Link>
         </Nav>
       </div>
     </HeaderContainer>

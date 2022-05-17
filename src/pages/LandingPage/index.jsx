@@ -7,6 +7,7 @@ import profile from "../../assets/webp/profile-picture.webp";
 import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-router-dom";
 import { projects } from "../../constant";
+import FileSaver from "file-saver";
 
 const LandingPage = () => {
   const [role, setRole] = useState("Web Developer");
@@ -22,6 +23,10 @@ const LandingPage = () => {
       );
     }, 3000);
   }, [role]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <Fragment>
@@ -43,7 +48,16 @@ const LandingPage = () => {
           <Link to="/projects">
             <Button type="primary">See Projects</Button>
           </Link>
-          <Button type="secondary" prefixIcon={<DownloadIcon />}>
+          <Button
+            type="secondary"
+            prefixIcon={<DownloadIcon />}
+            onClick={() =>
+              FileSaver.saveAs(
+                process.env.PUBLIC_URL + "/resource/cv.pdf",
+                "Reyes, Louis Adrian.pdf"
+              )
+            }
+          >
             Download CV
           </Button>
         </div>

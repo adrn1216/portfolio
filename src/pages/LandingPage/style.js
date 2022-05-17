@@ -5,6 +5,11 @@ export const LandingPageContainer = styled.div``;
 export const Intro = styled.section`
   padding: 128px 0 0 0;
   color: var(--white-color);
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 10px;
+    }
+  }
   h1 {
     font-size: 60px;
     letter-spacing: 0.5px;

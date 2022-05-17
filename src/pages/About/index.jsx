@@ -6,6 +6,10 @@ import profile from "../../assets/webp/profile-picture.webp";
 import { reviews, skills } from "../../constant";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <Fragment>
       <AboutMe>
