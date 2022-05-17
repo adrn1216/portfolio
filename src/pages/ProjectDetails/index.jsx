@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "../../components/Button";
 import { ProjectDetailsContainer, ProjectPreview, Technologies } from "./style";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import { projects } from "../../constant";
 
 const ProjectDetails = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const id = window.location.pathname.split("/")[2];
   const project = projects.filter((item) => item.id === id)[0];
   const { image, title, about, date, technologies } = project;

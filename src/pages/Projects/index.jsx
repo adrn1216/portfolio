@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "../../components/Button";
 import { Project, ProjectsContainer } from "./style";
 import { ReactComponent as ArrowRightIcon } from "../../assets/svg/arrow-right-icon.svg";
@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import { projects } from "../../constant";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <ProjectsContainer>
       {projects.map(({ id, title, description, image }) => {
